@@ -1,0 +1,287 @@
+@media (max-width: 991px) {
+  .container {
+    max-width: 100%;
+    padding: 0 40px;
+  }
+
+  .title1 {
+    font-size: 75px;
+  }
+
+  .text {
+    font-size: 22px;
+  }
+
+  .logo {
+    width: 115px;
+  }
+
+  .pl-md-3 {
+    padding-left: 0;
+  }
+
+  .btn {
+    padding: 16px 57px;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+
+  .btn--big {
+    padding: 18px 34px;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+
+  .menu {
+    position: relative;
+  }
+
+  .menu:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/img/banner-img.png) -50px -295px/150% no-repeat,
+      linear-gradient(180deg, #d9d9d9 68.62%, rgba(217, 217, 217, 0) 100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  }
+
+  .menu__toggle {
+    display: block;
+  }
+
+  .menu__content {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    transform: translateX(100%);
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 158px 150px 180px;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  }
+
+  .menu__list {
+    margin-right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu__item:not(:first-child) {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+
+  .menu__link {
+    font-size: 40px;
+  }
+
+  .menu__lang {
+    margin-top: 54px;
+    margin-right: 0;
+  }
+
+  .menu__lang-btn {
+    font-size: 40px;
+  }
+
+  .menu__lang-btn:not(:first-child) {
+    margin-left: 35px;
+  }
+
+  .menu__social {
+    margin-top: 64px;
+  }
+
+  .menu__social-link:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  .menu__social-link img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu--active:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu--active .menu__toggle {
+    z-index: 3;
+  }
+
+  .menu--active .menu__content {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .menu--active .menu__lines {
+    height: 0;
+  }
+
+  .menu--active .menu__lines:before {
+    transform: rotate(-45deg);
+  }
+
+  .menu--active .menu__lines:after {
+    transform: rotate(45deg);
+  }
+
+  .header__content {
+    padding-top: 40px;
+  }
+
+  .header__menu {
+    margin-left: auto;
+    width: auto;
+  }
+
+  .banner {
+    background: url(../../assets/img/banner-img.png) 0% 98% / 98rem no-repeat,
+      linear-gradient(90deg, #d9d9d9 68.62%, rgba(217, 217, 217, 0) 100%);
+    padding-top: 135px;
+    min-height: 880px;
+    background-size: 150%;
+    background-position: 0% -235px;
+  }
+
+  .banner__title {
+    margin-bottom: 35px;
+  }
+
+  .banner__texts {
+    flex-direction: column;
+    max-width: 572px;
+  }
+
+  .banner__text {
+    font-size: 28px;
+  }
+
+  .banner__subtext {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+
+  .banner__btn {
+    margin-top: 50px;
+  }
+
+  .banner__down {
+    transform: translateX(-15px);
+    margin-top: 20px;
+    width: 40px;
+    height: 50px;
+  }
+
+  .banner__down:before {
+    width: 8px;
+    height: 50px;
+  }
+
+  .banner__triangle {
+    display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .title1 {
+    font-size: 40px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .btn--big {
+    padding: 17px 50px;
+    font-size: 14px;
+  }
+
+  .menu:before {
+    background-size: 250%;
+    background-position: -50px -125px;
+  }
+
+  .menu__content {
+    padding: 100px 60px 110px;
+  }
+
+  .menu__item:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .menu__link {
+    font-size: 18px;
+  }
+
+  .menu__lang {
+    margin-top: 45px;
+  }
+
+  .menu__lang-btn {
+    font-size: 18px;
+    letter-spacing: 3.6px;
+  }
+
+  .menu__lang-btn:not(:first-child) {
+    margin-left: 17px;
+  }
+
+  .menu__social {
+    margin-top: 40px;
+  }
+
+  .menu__social-link:not(:first-child) {
+    margin-left: 25px;
+  }
+
+  .menu__social-link img {
+    width: 25px;
+    height: 23px;
+  }
+
+  .header__content {
+    padding-top: 18px;
+  }
+
+  .banner {
+    padding-top: 85px;
+    background-size: 250%;
+    background-position: -50px -125px;
+  }
+
+  .banner__title {
+    margin-bottom: 20px;
+  }
+
+  .banner__text {
+    font-size: 20px;
+  }
+
+  .banner__subtext {
+    margin-top: 14px;
+    font-size: 14px;
+  }
+
+  .banner__btn {
+    margin-top: 26px;
+  }
+}
