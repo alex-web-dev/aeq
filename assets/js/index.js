@@ -29,6 +29,16 @@ if ($menu) {
       document.body.classList.remove('body--lock');
     }
   });
+
+  const $menuLinks = $menu.querySelectorAll('.menu__link');
+  $menuLinks.forEach($link => {
+    $link.addEventListener('click', () => {
+      if ($menu.classList.contains('menu--active')) {
+        $menu.classList.remove('menu--active');
+        document.body.classList.remove('body--lock');
+      }
+    });
+  });
 }
 
 /* Banner */
