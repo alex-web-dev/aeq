@@ -6,10 +6,11 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="shortcut icon" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="assets/css/aos.css" />
-    <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link rel="stylesheet" href="assets/css/fonts.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/media.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css?v=1" />
+    <link rel="stylesheet" href="assets/css/fonts.css?v=1" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=1" />
+    <link rel="stylesheet" href="assets/css/media.css?v=1" />
     <title>AEQ</title>
   </head>
 
@@ -47,15 +48,15 @@
                 <button class="menu__lang-btn">EN</button>
               </div>
               <div class="menu__social">
-                <div class="menu__social-link">
+                <a class="menu__social-link" href="#">
                   <img src="assets/img/icons/whatsapp.svg" alt="" />
-                </div>
-                <div class="menu__social-link">
+                </a>
+                <a class="menu__social-link" href="#">
                   <img src="assets/img/icons/telegram.svg" alt="" />
-                </div>
-                <div class="menu__social-link">
+                </a>
+                <a class="menu__social-link" href="#">
                   <img src="assets/img/icons/email.svg" alt="" />
-                </div>
+                </a>
               </div>
             </div>
             <button class="menu__toggle">
@@ -68,39 +69,499 @@
 
     <main class="main">
       <section class="banner">
-        <div class="container">
-          <div class="banner__content pl-md-3">
-            <h1 class="title1 title1--primary banner__title" data-aos="fade-in">Консалтинговая компания AEQ</h1>
-            <div class="banner__texts">
-              <p class="banner__text" data-aos="fade-in" data-aos-delay="200">
-                Помогаем инвестиционным фондам, бизнесу и частным лицам сохранять и приумножать активы.
-              </p>
-              <p class="banner__subtext" data-aos="fade-in" data-aos-delay="400">
-                Наш международный опыт и многолетняя экспертиза в управлении активами, консалтинге, юриспруденции и
-                финансах помогут трансформировать ваш бизнес своевременно и комфортно. Мы гордимся репутацией честного,
-                компетентного и стабильного партнёра.
-              </p>
+        <div class="banner__body">
+          <div class="container">
+            <div class="banner__content pl-md-3">
+              <h1 class="title1 title1--primary banner__title" data-aos="fade-in">Консалтинговая компания AEQ</h1>
+              <div class="banner__texts">
+                <p class="banner__text" data-aos="fade-in" data-aos-delay="200">
+                  Помогаем инвестиционным фондам, бизнесу и частным лицам сохранять и приумножать активы.
+                </p>
+                <p class="banner__subtext" data-aos="fade-in" data-aos-delay="400">
+                  Наш международный опыт и многолетняя экспертиза в управлении активами, консалтинге, юриспруденции и
+                  финансах помогут трансформировать ваш бизнес своевременно и комфортно. Мы гордимся репутацией
+                  честного, компетентного и стабильного партнёра.
+                </p>
+              </div>
+              <button class="btn btn--big banner__btn" data-aos="fade-in" data-aos-delay="400">Подробнее</button>
+              <a class="banner__down" href="#features" data-aos="fade-in" data-aos-delay="400"></a>
             </div>
-            <button class="btn btn--big banner__btn" data-aos="fade-in" data-aos-delay="400">Подробнее</button>
-            <div class="banner__down-box" data-aos="fade-in" data-aos-delay="400">
-              <a class="banner__down" href="#features"></a>
+          </div>
+          <div class="banner__triangle" data-aos="fade-right">
+            <img src="assets/img/icons/triangle-round.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="features main__features" id="features">
+        <div class="container">
+          <div class="features__content pl-md-3">
+            <div class="label features__label" data-aos="fade-in">Преимущества</div>
+            <div class="features__list">
+              <div class="feature-item features__item" data-aos="fade-in">
+                <div class="feature-item__icon">
+                  <img src="assets/img/features/1.svg" alt="" />
+                </div>
+                <div class="feature-item__info">
+                  <p class="text feature-item__text">Простое и актуальное решение задач</p>
+                </div>
+              </div>
+              <div class="feature-item features__item" data-aos="fade-in" data-aos-delay="200">
+                <div class="feature-item__icon">
+                  <img src="assets/img/features/2.svg" alt="" />
+                </div>
+                <div class="feature-item__info">
+                  <p class="text feature-item__text">Конфиденциальность и индивидуальный подход</p>
+                </div>
+              </div>
+              <div class="feature-item features__item" data-aos="fade-in" data-aos-delay="400">
+                <div class="feature-item__icon">
+                  <img src="assets/img/features/3.svg" alt="" />
+                </div>
+                <div class="feature-item__info">
+                  <p class="text feature-item__text">Международная экспертиза и высокие стандарты</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="banner__triangle" data-aos="fade-right">
-          <img src="assets/img/icons/triangle-round.svg" alt="" />
+      </section>
+
+      <section class="services main__services">
+        <div class="container">
+          <div class="services__content pl-md-3">
+            <div class="label services__label" data-aos="fade-in">Услуги</div>
+            <h2 class="title1 services__title" data-aos="fade-in">Решение сложных задач. <b>Просто.</b></h2>
+            <p class="title2 services__text" data-aos="fade-in">
+              Независимая команда с многолетним опытом в управлении активами, консалтинге и финансах подберёт подходящее
+              вам решение.
+            </p>
+            <div class="services__list">
+              <div class="service-item services__item" data-aos="fade-in">
+                <div class="service-item__info">
+                  <h3 class="title2 service-item__title">Управление активами:</h3>
+                  <ul class="list-triangle service-item__list">
+                    <li class="list-triangle__item">управление фондами</li>
+                    <li class="list-triangle__item">консультирование по вопросам стратегии развития бизнеса</li>
+                    <li class="list-triangle__item">структурирование владения активами и корпоративного управления</li>
+                    <li class="list-triangle__item">планирование наследования</li>
+                  </ul>
+                </div>
+                <div class="service-item__icon">
+                  <img src="assets/img/services/1.svg" alt="" />
+                </div>
+              </div>
+              <div class="service-item services__item" data-aos="fade-in">
+                <div class="service-item__info">
+                  <h3 class="title2 service-item__title">Управление инвестициями:</h3>
+                  <ul class="list-triangle service-item__list">
+                    <li class="list-triangle__item">разработка и анализ персональных инвестиционных стратегий</li>
+                    <li class="list-triangle__item">организация финансирования</li>
+                    <li class="list-triangle__item">консультирование по прямым инвестициям в бизнес и недвижимость</li>
+                  </ul>
+                </div>
+                <div class="service-item__icon">
+                  <img src="assets/img/services/2.svg" alt="" />
+                </div>
+              </div>
+              <div class="service-item services__item" data-aos="fade-in">
+                <div class="service-item__info">
+                  <h3 class="title2 service-item__title">Юридические и финансовые услуги:</h3>
+                  <ul class="list-triangle service-item__list">
+                    <li class="list-triangle__item">
+                      комплексное юридическое сопровождение юридических и физических лиц (включая сопровождение крупных
+                      M&A сделок)
+                    </li>
+                    <li class="list-triangle__item">финансовое планирование</li>
+                    <li class="list-triangle__item">ведение консолидированной отчетности по всем активам</li>
+                  </ul>
+                </div>
+                <div class="service-item__icon">
+                  <img src="assets/img/services/3.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="callback services__callback" data-aos="fade-in">
+              <div class="callback__content">
+                <button class="title2 title2--white callback__title js-open-popup" data-popup-name="callback">
+                  Связаться с нами
+                </button>
+                <button
+                  class="btn btn--big btn--border-white callback__btn callback__btn--desktop js-open-popup"
+                  data-popup-name="callback"
+                >
+                  Связаться
+                </button>
+                <button
+                  class="btn btn--big btn--border-white callback__btn callback__btn--mobile js-open-popup"
+                  data-popup-name="callback"
+                >
+                  Связаться с нами
+                </button>
+                <div class="callback__triangle">
+                  <img src="assets/img/icons/triangle-round-bold.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="features" id="features"></section>
+
+      <section class="partners main__partners">
+        <div class="container">
+          <div class="partners__content pl-md-3">
+            <div class="label partners__label" data-aos="fade-in">Партнеры</div>
+            <div class="partners__main">
+              <div class="partners__list swiper" data-aos="fade-in">
+                <div class="swiper-wrapper partners__swiper-wrapper">
+                  <div class="swiper-slide partners__slide">
+                    <img class="dynamic-img" src="assets/img/partners/pareto-print.png" alt="" />
+                  </div>
+                  <div class="swiper-slide partners__slide">
+                    <img class="dynamic-img" src="assets/img/partners/azbuka.png" alt="" />
+                  </div>
+                  <div class="swiper-slide partners__slide">
+                    <img class="dynamic-img" src="assets/img/partners/mozaik.png" alt="" />
+                  </div>
+                  <div class="swiper-slide partners__slide">
+                    <img class="dynamic-img" src="assets/img/partners/strelka.png" alt="" />
+                  </div>
+                  <div class="swiper-slide partners__slide">
+                    <img class="dynamic-img" src="assets/img/partners/pioner.png" alt="" />
+                  </div>
+                  <div class="swiper-slide partners__slide">
+                    <img class="dynamic-img" src="assets/img/partners/cinema.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-prev partners__prev"></div>
+                <div class="swiper-next partners__next"></div>
+              </div>
+              <div class="swiper-pagination partners__pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team">
+        <div class="container">
+          <div class="team__content pl-md-3">
+            <div class="label team__label" data-aos="fade-in">Команда</div>
+            <div class="team__slider-box" data-aos="fade-in">
+              <div class="team__slider swiper">
+                <div class="team__slider-wrapper swiper-wrapper">
+                  <div class="swiper-slide team__slide">
+                    <div class="team-item team__item">
+                      <button class="team-item__img js-open-popup" data-popup-name="team-item">
+                        <img src="assets/img/team-item.jpg" alt="" />
+                      </button>
+                      <h3 class="title2 team-item__title">
+                        <button class="js-open-popup" data-popup-name="team-item">
+                          Александра <br />
+                          Александровская
+                        </button>
+                      </h3>
+                      <div class="team-item__position">Управляющий партнер компании AEQ</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team-item team__item">
+                      <button class="team-item__img js-open-popup" data-popup-name="team-item">
+                        <img src="assets/img/team-item.jpg" alt="" />
+                      </button>
+                      <h3 class="title2 team-item__title">
+                        <button class="js-open-popup" data-popup-name="team-item">
+                          Виктор <br />
+                          Самойлов
+                        </button>
+                      </h3>
+                      <div class="team-item__position">Управляющий партнер компании AEQ</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team-item team__item">
+                      <button class="team-item__img js-open-popup" data-popup-name="team-item">
+                        <img src="assets/img/team-item.jpg" alt="" />
+                      </button>
+                      <h3 class="title2 team-item__title">
+                        <button class="js-open-popup" data-popup-name="team-item">
+                          Александра <br />
+                          Александровская
+                        </button>
+                      </h3>
+                      <div class="team-item__position">Управляющий партнер компании AEQ</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team-item team__item">
+                      <button class="team-item__img js-open-popup" data-popup-name="team-item">
+                        <img src="assets/img/team-item.jpg" alt="" />
+                      </button>
+                      <h3 class="title2 team-item__title">
+                        <button class="js-open-popup" data-popup-name="team-item">
+                          Александра <br />
+                          Александровская
+                        </button>
+                      </h3>
+                      <div class="team-item__position">Управляющий партнер компании AEQ</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team-item team__item">
+                      <button class="team-item__img js-open-popup" data-popup-name="team-item">
+                        <img src="assets/img/team-item.jpg" alt="" />
+                      </button>
+                      <h3 class="title2 team-item__title">
+                        <button class="js-open-popup" data-popup-name="team-item">
+                          Александра <br />
+                          Александровская
+                        </button>
+                      </h3>
+                      <div class="team-item__position">Управляющий партнер компании AEQ</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team-item team__item">
+                      <button class="team-item__img js-open-popup" data-popup-name="team-item">
+                        <img src="assets/img/team-item.jpg" alt="" />
+                      </button>
+                      <h3 class="title2 team-item__title">
+                        <button class="js-open-popup" data-popup-name="team-item">
+                          Виктор <br />
+                          Самойлов
+                        </button>
+                      </h3>
+                      <div class="team-item__position">Управляющий партнер компании AEQ</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination team__pagination"></div>
+              </div>
+              <div class="swiper-prev team__prev"></div>
+              <div class="swiper-next team__next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="contacts">
+        <div class="contacts__header">
+          <div class="container">
+            <div class="contacts__header-content pl-md-3">
+              <div class="label contacts__label" data-aos="fade-in">контакты</div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__main" data-aos="fade-in">
+          <div class="contacts__info">
+            <div class="contacts__item">
+              <div class="contacts__item-icon">
+                <img class="dynamic-img" src="assets/img/icons/location-border.svg" alt="" />
+              </div>
+              <div class="contacts__item-main">
+                <p class="text contacts__item-text">123112, Москва, пресненская над, 6 стр 2</p>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__item-icon">
+                <img class="dynamic-img" src="assets/img/icons/phone-border.svg" alt="" />
+              </div>
+              <div class="contacts__item-main">
+                <a class="text contacts__item-text" href="tel:+79153533533">+7 915 353 35 33</a>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__item-icon">
+                <img class="dynamic-img" src="assets/img/icons/email-border.svg" alt="" />
+              </div>
+              <div class="contacts__item-main">
+                <a class="text contacts__item-text" href="mailto:hello@aeq.group">hello@aeq.group</a>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__item-icon">
+                <img class="dynamic-img" src="assets/img/icons/messages-border.svg" alt="" />
+              </div>
+              <div class="contacts__item-main">
+                <div class="contacts__social">
+                  <a class="contacts__social-item" href="#">
+                    <img class="dynamic-img" src="assets/img/icons/whatsapp-black.svg" alt="" />
+                  </a>
+                  <a class="contacts__social-item" href="#">
+                    <img class="dynamic-img" src="assets/img/icons/telegram-black.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A6b37718c744bdfbd3f94e9b460d71332cf4c85ee3f0a8fb79288d5c2ed157142&amp;source=constructor&scroll=false"
+              width="100%"
+              height="400"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__content"></div>
+        <div class="footer__content">
+          <div class="footer__main" data-aos="fade-in">
+            <a href="#" class="logo footer__logo">
+              <img class="logo__img" src="assets/img/logo-white.svg" alt="" />
+            </a>
+            <ul class="menu footer__menu">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#" data-text="О нас">О нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#" data-text="Преимущества">Преимущества</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#" data-text="Услуги">Услуги</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#" data-text="Партнеры">Партнеры</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#" data-text="Команда">Команда</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#" data-text="Контакты">Контакты</a>
+              </li>
+            </ul>
+            <div class="footer__lang">
+              <button class="footer__lang-btn footer__lang-btn--active">RU</button>
+              <button class="footer__lang-btn">EN</button>
+            </div>
+            <div class="footer__social">
+              <a class="footer__social-link" href="#">
+                <img src="assets/img/icons/whatsapp-white.svg" alt="" />
+              </a>
+              <a class="footer__social-link" href="#">
+                <img src="assets/img/icons/telegram-white.svg" alt="" />
+              </a>
+              <a class="footer__social-link" href="#">
+                <img src="assets/img/icons/email-white.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="footer__triangle">
+            <img src="assets/img/icons/triangle-round-bold.svg" alt="" data-aos="fade-in" />
+          </div>
+        </div>
       </div>
     </footer>
 
+    <div class="popup" data-name="team-item">
+      <div class="popup__body">
+        <div class="popup__dialog">
+          <div class="popup__content">
+            <div class="team-about">
+              <div class="team-about__img">
+                <img src="assets/img/team-about.jpg" alt="" />
+              </div>
+              <div class="team-about__info">
+                <div class="team-about__header">
+                  <div class="title2 team-about__title">Александра Александровская</div>
+                  <div class="team-about__position">Управляющий партнер компании AEQ</div>
+                </div>
+                <div class="text team-about__text">
+                  <p>
+                    Управляющий партнер компании AEQ. Энергичный и глобально мыслящий анти-кризисный руководитель с
+                    опытом комплексной работы в консалтинге, крупном частном инвестиционном фонде и собственных
+                    проектах. Специализируется на сложных проектах, требующих анти-кризисного управления, а также на
+                    крупных M&A сделках в России и за рубежом.
+                  </p>
+                  <p>
+                    Виктор имеет профильное юридическое образование, полученное в РУДН (бакалавр права) и МГЮА им.
+                    Кутафина (магистр права). В 2023 году Виктор также получил диплом Московской школы управления
+                    Сколково в рамках программы для менеджеров высшего звена Skolkovo Executive MBA for Eurasia.
+                  </p>
+                  <p>
+                    Свободно говорит на английском языке. Увлекается катанием на вейкборде, тайским боксом, силовыми
+                    видами спорта и путешествиями.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="popup__close popup__close--sm-white">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.48529 25.4559L25.4559 8.48537" stroke-width="2" stroke-linecap="round" />
+                <path d="M8.48526 8.48535L25.4558 25.4559" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" data-name="callback">
+      <div class="popup__body">
+        <div class="popup__dialog">
+          <div class="popup__content">
+            <form class="form popup__form" autocomplete="off">
+              <div class="title1 form__title">Заказать консультацию</div>
+              <div class="form__main">
+                <div class="form__items">
+                  <div class="form-field form__item">
+                    <label class="form-field__label" for="callback-name">Имя</label>
+                    <input class="input form-field__input" type="text" id="callback-name" placeholder="Виктор" />
+                  </div>
+                  <div class="form-field form__item">
+                    <label class="form-field__label" for="callback-email">Ваш e-mail*</label>
+                    <input
+                      class="input form-field__input"
+                      type="email"
+                      id="callback-email"
+                      placeholder="name@mail.com"
+                    />
+                  </div>
+                  <div class="form-field form__item">
+                    <label class="form-field__label" for="callback-phone">Ваш телефон</label>
+                    <input
+                      class="input form-field__input"
+                      type="text"
+                      id="callback-phone"
+                      placeholder="+7 999 999 99 99"
+                    />
+                  </div>
+                </div>
+                <div class="form__items">
+                  <div class="form-field form__item">
+                    <label class="form-field__label" for="callback-question">Ваш вопрос</label>
+                    <textarea
+                      class="input input--area form-field__input"
+                      type="text"
+                      id="callback-question"
+                      placeholder="Виктор"
+                    ></textarea>
+                  </div>
+                </div>
+                <label class="checkbox form__agree">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__switch"></span>
+                  <span class="checkbox__text">Я согласен на сбор персональных данных</span>
+                </label>
+                <div class="form__ps">* - поля, обязательные к заполнению</div>
+                <button class="btn btn--big form__btn">Заказать</button>
+              </div>
+            </form>
+            <button class="popup__close">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.48529 25.4559L25.4559 8.48537" stroke-width="2" stroke-linecap="round" />
+                <path d="M8.48526 8.48535L25.4558 25.4559" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="assets/js/aos.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/index.js?v=1"></script>
   </body>
 </html>
