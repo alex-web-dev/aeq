@@ -198,7 +198,7 @@ button {
   transition: border .3s;
 }
 
-.input:hover {
+.input:focus {
   border-color: var(--color-primary);
 }
 
